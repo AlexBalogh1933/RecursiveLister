@@ -103,7 +103,6 @@ public class RecursiveListerFrame extends JFrame
         File children[] = FileFinder(startingDirectory);
         for(File child : children)
         {
-            String fileName = child.toString();
             if(child.isDirectory())
             {
                 find(child);
